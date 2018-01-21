@@ -22,14 +22,14 @@ public class UserController {
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public void create (User user){
+    public void create(User user) {
         users.save(user);
     }
 
     @GET
     @Path("/{userName}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Response getById(@PathParam("userName") String userName){
+    public Response getById(@PathParam("userName") String userName) {
         return users.findById(userName)
                 .map(user -> Response.ok(user).build())
                 .orElse(Response.status(Response.Status.NOT_FOUND).build());

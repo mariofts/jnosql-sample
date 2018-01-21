@@ -1,4 +1,4 @@
-package com.mariofts.jnosql.configs;
+package com.mariofts.jnosql;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

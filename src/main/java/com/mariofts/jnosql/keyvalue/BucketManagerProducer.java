@@ -1,4 +1,4 @@
-package com.mariofts.jnosql.configs;
+package com.mariofts.jnosql.keyvalue;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.ApplicationScoped;
